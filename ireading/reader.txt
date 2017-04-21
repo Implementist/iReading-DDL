@@ -1,0 +1,7 @@
+CREATE TABLE `reader` (
+  `ReaderID` bigint(12) unsigned NOT NULL AUTO_INCREMENT,
+  `ReaderName` varchar(64) DEFAULT NULL,
+  `ReaderAge` int(2) DEFAULT NULL,
+  `PortraitNumber` int(2) DEFAULT NULL,
+  PRIMARY KEY (`ReaderID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -1,0 +1,13 @@
+CREATE TABLE `user` (
+  `UserID` int(9) unsigned zerofill NOT NULL AUTO_INCREMENT,
+  `UserName` varchar(32) DEFAULT NULL,
+  `PhoneNumber` varchar(11) DEFAULT NULL,
+  `PhoneNumberVerified` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `EmailAddress` varchar(64) DEFAULT NULL,
+  `EmailAddressVerified` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `PasswordHash` varchar(32) DEFAULT NULL,
+  `SecurityStamp` varchar(32) DEFAULT NULL,
+  `RegistrationDateTime` timestamp NULL DEFAULT NULL,
+  `LastLoginDateTime` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`UserID`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;

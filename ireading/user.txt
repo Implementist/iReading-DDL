@@ -7,7 +7,7 @@ CREATE TABLE `user` (
   `EmailAddressVerified` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `PasswordHash` varchar(32) DEFAULT NULL,
   `SecurityStamp` varchar(32) DEFAULT NULL,
-  `RegistrationDateTime` timestamp NULL DEFAULT NULL,
-  `LastLoginDateTime` timestamp NULL DEFAULT NULL,
+  `RegistrationDateTime` varchar(19) DEFAULT NULL,
+  `LastLoginDateTime` varchar(19) DEFAULT NULL,
   PRIMARY KEY (`UserID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;

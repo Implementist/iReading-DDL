@@ -1,0 +1,12 @@
+CREATE TABLE `book` (
+  `BookID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `Title` varchar(128) DEFAULT NULL,
+  `Author` varchar(128) DEFAULT NULL,
+  `CoverURL` varchar(255) DEFAULT NULL,
+  `ContentURL` varchar(255) DEFAULT NULL,
+  `PageCount` int(3) unsigned DEFAULT '0',
+  `FileName` varchar(32) DEFAULT NULL,
+  `TotalScore` int(11) unsigned DEFAULT '0',
+  `EvaluatorCount` int(11) unsigned DEFAULT '1',
+  PRIMARY KEY (`BookID`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
